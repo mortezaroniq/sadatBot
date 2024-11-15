@@ -3,6 +3,8 @@ import requests
 from telegram import Update
 from deep_translator import GoogleTranslator
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+import time
+import threading
 
 # API و توکن‌ها
 TELEGRAM_BOT_TOKEN = "8088475882:AAGHxr-2VZudZkunsgm3IDqaDiCucFV6L-4"
@@ -53,6 +55,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         await update.message.reply_text("متاسفانه اتصال به سرور با مشکل مواجه شد.")
 
+# تابع برای اجرای فایل lovely.py هر 5 دقیقه
+def run_lovely():
+    while True:
+        time.sleep(300)  # 5 minutes
+        exec(open('lovely.py').read())
+
 # تنظیمات ربات
 def main():
     # ایجاد برنامه ربات با توکن
@@ -68,4 +76,5 @@ def main():
     application.run_polling()
 
 if __name__ == '__main__':
+    threading.Thread(target=run_lovely, daemon=True).start()  # Start the lovely.py execution in a separate thread
     main()
