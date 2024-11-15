@@ -36,7 +36,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     }
     data = {
         "model": "command",
-        "prompt": f"(Only when he asks your name, say Morteza) (the name of the illusion wife is Ruqiya) Give a loving and emotional answer to the message below, imagine that the other party is your wife: {user_message_english}",
+        "prompt": f"(only when he asks your name, say Morteza) (the woman's name is Ruqiya) give a loving and emotional answer to the message below, imagine that the other person is your wife, (don't make the answer multi-purpose and be brief and complete) Remember that you and your wife are the people of Iran (find out what he wants and answer him and his request very well): {user_message_english}",
         "max_tokens": 150,
         "temperature": 0.5,
     }
