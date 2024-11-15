@@ -39,6 +39,7 @@ def generate_romantic_text():
 
 # Function to fetch a random image from the Lexica API
 def get_image_from_lexica(prompt):
+    global LEXICA_URL  # Ensure LEXICA_URL is recognized in this scope
     params = {"q": prompt}
     response = requests.get(LEXICA_URL, params=params)
     

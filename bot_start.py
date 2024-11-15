@@ -1,3 +1,5 @@
+import os
+from flask import Flask
 import sqlite3
 import requests
 from telegram import Update
@@ -5,6 +7,12 @@ from deep_translator import GoogleTranslator
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import time
 import threading
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Server is running!"
 
 # API و توکن‌ها
 TELEGRAM_BOT_TOKEN = "8088475882:AAGHxr-2VZudZkunsgm3IDqaDiCucFV6L-4"
@@ -76,5 +84,6 @@ def main():
     application.run_polling()
 
 if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))  # Default port is 5000 if PORT is not set
     threading.Thread(target=run_lovely, daemon=True).start()  # Start the lovely.py execution in a separate thread
-    main()
+    app.run(host="0.0.0.0", port=port)
