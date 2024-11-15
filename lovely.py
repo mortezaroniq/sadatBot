@@ -2,6 +2,7 @@ import requests
 from deep_translator import GoogleTranslator
 import random
 import sqlite3
+import json  # Added import for json
 
 # API keys and Telegram information settings
 COHERE_API_KEY = "VBYG12thgKuZRaErjzWZgvz5fU3WA1Pvq2Qb3IgT"  # Language model API key
@@ -17,7 +18,7 @@ def generate_romantic_text():
     }
     data = {
         "model": "command",
-        "prompt": "Short romantic and romantic text to express interest, with confident and intimate language, a sense of love and affection, complete and beautiful and impressive phrasing, short and future-oriented text.",
+        "prompt": "Short romantic text to express interest, with confident and intimate language, a sense of love and affection, complete and beautiful phrasing, short and future-oriented text.",
         "max_tokens": 200,
         "temperature": 0.7,
     }
