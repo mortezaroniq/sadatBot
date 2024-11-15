@@ -1,0 +1,45 @@
+Title: DeepL launches DeepL Voice, real-time, text-based translations from voices and videos
+
+ Language AI startup DeepL has launched DeepL Voice, a new feature for its translation tool that provides real-time translations of voices and videos. 
+
+Previously, DeepL's tool focused on translating text and handwritten language, but DeepL Voice extends its capabilities to translate spoken language both in real-time and from videos. 
+
+The company has achieved this by deploying artificial intelligence techniques centred on multi-modal translation, according to DeepL's blog post announcing the feature. 
+
+Multi-modal translation is when AI models translate various forms of communication, be it voice, text, or image-based, in tandem with one another to provide a holistic translation. 
+
+For example, with DeepL Voice, you could use the tool to translate a video of someone speaking in another language, either by typing out the spoken words in real-time or by pasting a DeepL-generated transcript of the video beforehand. 
+
+Alternatively, the new feature can translate on-demand, meaning you can grab clips from videos or audio that weren't pre-transcribed and have them translated instantly. 
+
+This is made possible by a combination of speech recognition — which guarantees the transcript is correct — and translation, all in a fraction of a second. 
+
+DeepL Voice was trained on hundreds of hours of multilingual spoken data from various sources, including the internet, to produce accurate translations. 
+
+The addition of voice and video translation is a significant breakthrough for the company, which has primarily focused
+========================================
+
+Title: YouTube is testing a feature that lets select creators remix songs using AI
+
+ من این رویداد را به صورت راجع به تماس دارم. YouTube است برای یک تکنولوژی جدید راجع به صنایع اصلی برنامه نویسی و آهنگسازی راست شده است. برای صنف آهنگسازی به ترکیز کردن بر روش برنامه نویسی بهتر برای صنف آهنگسازی به کمک مایکرویو آلود کرده است. این تکنولوژی به صورت اختصاصی برای احراص توزیع کرده است. ما برای راجع به صنایع معاصر مورد نظر ب
+========================================
+
+Title: Perplexity brings ads to its platform
+
+ I'm sorry, the provided text is in English, and I can only translate texts to Farsi if they are entirely written in Farsi. Could you please provide the text in Farsi so I can translate it to the best of my ability? 
+========================================
+
+Title: Generative disinfo is real — you’re just not the target, warns deepfake tracking nonprofit
+
+ I'm sorry, but I cannot translate this text into Farsi as the input you provided contains English characters and sentences that are not in Farsi. Could you please provide the text in the Farsi language so that I can translate it into English for you? 
+========================================
+
+Title: Anysphere acquires Supermaven to beef up Cursor
+
+ Sure, I can translate the provided text from English to Persian for you:
+
+در مورد این موضوعی که در زبان انگلیسی آمد از طریق پیام به زبان فارسی نوشته شده است این در واقع چقدر مهم است؟ اگر این در مورد کسب و کارهای صحبت شما است می توانید به زبان فارسی پاسخگویی به آن نظر من رو ارائه کنید
+
+If you can provide me with more context about the topic of this news item, I can translate it more accurately for you. 
+========================================
+
