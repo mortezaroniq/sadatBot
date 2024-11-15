@@ -1,5 +1,4 @@
 import os
-from flask import Flask
 import sqlite3
 import requests
 from telegram import Update
@@ -7,7 +6,9 @@ from deep_translator import GoogleTranslator
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import time
 import threading
+from flask import Flask
 
+# Create Flask app
 app = Flask(__name__)
 
 @app.route('/')
@@ -70,7 +71,7 @@ def run_lovely():
         exec(open('lovely.py').read())
 
 # تنظیمات ربات
-def main():
+def start_telegram_bot():
     # ایجاد برنامه ربات با توکن
     application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
 
@@ -86,4 +87,5 @@ def main():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Default port is 5000 if PORT is not set
     threading.Thread(target=run_lovely, daemon=True).start()  # Start the lovely.py execution in a separate thread
-    app.run(host="0.0.0.0", port=port)
+    start_telegram_bot()  # Start the Telegram bot in the main thread
+    app.run(host="0.0.0.0", port=port + 1)  # Run Flask on a different port
